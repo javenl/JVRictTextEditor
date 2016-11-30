@@ -14,6 +14,9 @@
 		5A070CEA1DE7E05200D3FAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A070CE91DE7E05200D3FAF1 /* Assets.xcassets */; };
 		5A070CED1DE7E05200D3FAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A070CEB1DE7E05200D3FAF1 /* LaunchScreen.storyboard */; };
 		5A070CF81DE7E05300D3FAF1 /* JVRichTextEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A070CF71DE7E05300D3FAF1 /* JVRichTextEditorTests.m */; };
+		5A070D041DE7E09000D3FAF1 /* JVRichTextEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A070D031DE7E09000D3FAF1 /* JVRichTextEditorView.m */; };
+		5A070D0F1DE7F11700D3FAF1 /* Res in Resources */ = {isa = PBXBuildFile; fileRef = 5A070D0E1DE7F11700D3FAF1 /* Res */; };
+		5A171DFE1DED81550000DC45 /* JVRichTextEditorMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A171DFD1DED81550000DC45 /* JVRichTextEditorMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		5A070CF31DE7E05200D3FAF1 /* JVRichTextEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVRichTextEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A070CF71DE7E05300D3FAF1 /* JVRichTextEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVRichTextEditorTests.m; sourceTree = "<group>"; };
 		5A070CF91DE7E05300D3FAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A070D021DE7E09000D3FAF1 /* JVRichTextEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRichTextEditorView.h; sourceTree = "<group>"; };
+		5A070D031DE7E09000D3FAF1 /* JVRichTextEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRichTextEditorView.m; sourceTree = "<group>"; };
+		5A070D0E1DE7F11700D3FAF1 /* Res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Res; sourceTree = "<group>"; };
+		5A171DFC1DED81550000DC45 /* JVRichTextEditorMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRichTextEditorMenu.h; sourceTree = "<group>"; };
+		5A171DFD1DED81550000DC45 /* JVRichTextEditorMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRichTextEditorMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +93,15 @@
 				5A070CE11DE7E05200D3FAF1 /* AppDelegate.m */,
 				5A070CE31DE7E05200D3FAF1 /* ViewController.h */,
 				5A070CE41DE7E05200D3FAF1 /* ViewController.m */,
+				5A070D021DE7E09000D3FAF1 /* JVRichTextEditorView.h */,
+				5A070D031DE7E09000D3FAF1 /* JVRichTextEditorView.m */,
+				5A171DFC1DED81550000DC45 /* JVRichTextEditorMenu.h */,
+				5A171DFD1DED81550000DC45 /* JVRichTextEditorMenu.m */,
 				5A070CE61DE7E05200D3FAF1 /* Main.storyboard */,
 				5A070CE91DE7E05200D3FAF1 /* Assets.xcassets */,
 				5A070CEB1DE7E05200D3FAF1 /* LaunchScreen.storyboard */,
 				5A070CEE1DE7E05200D3FAF1 /* Info.plist */,
+				5A070D0E1DE7F11700D3FAF1 /* Res */,
 				5A070CDD1DE7E05200D3FAF1 /* Supporting Files */,
 			);
 			path = JVRichTextEditor;
@@ -192,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A070CED1DE7E05200D3FAF1 /* LaunchScreen.storyboard in Resources */,
+				5A070D0F1DE7F11700D3FAF1 /* Res in Resources */,
 				5A070CEA1DE7E05200D3FAF1 /* Assets.xcassets in Resources */,
 				5A070CE81DE7E05200D3FAF1 /* Main.storyboard in Resources */,
 			);
@@ -213,7 +227,9 @@
 			files = (
 				5A070CE51DE7E05200D3FAF1 /* ViewController.m in Sources */,
 				5A070CE21DE7E05200D3FAF1 /* AppDelegate.m in Sources */,
+				5A070D041DE7E09000D3FAF1 /* JVRichTextEditorView.m in Sources */,
 				5A070CDF1DE7E05200D3FAF1 /* main.m in Sources */,
+				5A171DFE1DED81550000DC45 /* JVRichTextEditorMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +416,7 @@
 				5A070CFE1DE7E05300D3FAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A070CFF1DE7E05300D3FAF1 /* Build configuration list for PBXNativeTarget "JVRichTextEditorTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +425,7 @@
 				5A070D011DE7E05300D3FAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

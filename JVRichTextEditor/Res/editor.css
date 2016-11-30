@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+/*为空时显示 element attribute content*/
+#editor:empty:before {
+    content: attr(placeholder);
+    color:#red;
+}
+/*焦点时内容为空*/
+#editor:focus:before {
+    content:none;
+}

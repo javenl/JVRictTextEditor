@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "JVRichTextEditorView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) JVRichTextEditorView *editorView;
+
+//@property (nonatomic, strong) UIButton *button;
 
 @end
 
@@ -16,12 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.editorView = [[JVRichTextEditorView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.editorView];
+    
+    [self.editorView setContentPadding:UIEdgeInsetsMake(40, 0, 0, 0)];
+    
+//    self.button = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [self.button setTitle:@"test" forState:UIControlStateNormal];
+//    [self.button addTarget:self action:@selector(didTapTest) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:self.button];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)didTapTest {
+
 }
 
 @end
